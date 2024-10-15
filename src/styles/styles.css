@@ -1,0 +1,128 @@
+/* src/styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Màu nền khác */
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #495057; /* Màu tiêu đề mới */
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Header Styles */
+
+header {
+    background-color: #343a40; /* Màu nền header mới */
+    padding: 15px 30px;
+    color: #ffffff; /* Màu chữ sáng hơn */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #ffdd57; /* Màu chữ liên kết mới */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 221, 87, 0.2);
+    color: #ffffff; /* Màu chữ khi hover */
+    border-radius: 5px;
+}
+
+
+/* Product Styles */
+
+.product-card {
+    background-color: #ffffff; /* Màu nền thẻ sản phẩm */
+    border: 1px solid #ced4da; /* Đường viền mới */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #2222; /* Màu tên sản phẩm mới */
+}
+
+.product-price {
+    color: #dc3545; /* Màu giá sản phẩm */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.button-add-to-cart {
+    background-color: #ff5722; /* Màu nút thêm vào giỏ hàng mới */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button-add-to-cart:hover {
+    background-color: #e64a19; /* Màu khi hover */
+    transform: scale(1.05);
+}
+
+
+/* Cart Styles */
+
+.cart-container {
+    background-color: #ffffff; /* Màu nền giỏ hàng */
+    border: 1px solid #ced4da; /* Đường viền mới */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item span {
+    font-size: 1rem;
+    color: #495057; /* Màu chữ mới cho các mục giỏ hàng */
+}
